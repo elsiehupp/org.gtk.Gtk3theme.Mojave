@@ -1,0 +1,42 @@
+{
+  "id": "org.gtk.Gtk3theme.Mojave",
+  "branch": "3.22",
+  "runtime": "org.freedesktop.Sdk",
+  "build-extension": true,
+  "sdk": "org.freedesktop.Sdk",
+  "runtime-version": "18.08",
+  "appstream-compose": false,
+  "separate-locales": false,
+  "modules": [
+    {
+      "name": "Mojave-gtk-theme",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 themes/Mojave/gtk-3.0/gtk.css ${FLATPAK_DEST}/gtk.css",
+        "install -Dm644 themes/Mojave/gtk-3.0/gtk-dark.css ${FLATPAK_DEST}/gtk-dark.css",
+        "install -Dm644 themes/Mojave/gtk-3.0/gtk.gresource ${FLATPAK_DEST}/gtk.gresource"
+        "cp -a index.theme ${FLATPAK_DEST}/index.theme"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "path": "https://raw.githubusercontent.com/elsiehupp/org.gtk.Gtk3theme.Mojave/master/Mojave-gtk-theme.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "appdata",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 --target-directory=${FLATPAK_DEST}/share/appdata org.gtk.Gtk3theme.Mojave.appdata.xml",
+        "appstream-compose --basename=org.gtk.Gtk3theme.Mojave --prefix=${FLATPAK_DEST} --origin=flatpak org.gtk.Gtk3theme.Mojave"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "org.gtk.Gtk3theme.Mojave.appdata.xml"
+        }
+      ]
+    }
+  ]
+}

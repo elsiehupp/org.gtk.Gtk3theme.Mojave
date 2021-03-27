@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="runtime">
+  <id>org.gtk.Gtk3theme.Mojave</id>
+  <metadata_license>GPL-3.0-only</metadata_license>
+  <name>Mojave-GTK</name>
+  <summary>Mojave-Style Theme for GTK Flatpak Applications</summary>
+  <description>
+      <p>This Flatpak provides a Mojave-style GTK theme in a form that can be used by other Flatpak applications.
+	  </p>
+      <p>Attributions: This theme was created by Vince Liuice, based on horst3180' Arc theme.
+	  </p>
+      <p>To match the appearance of this theme with Snap applications, install and follow the instructions at Genadi Naydenov's coordinating Snap package: https://snapcraft.io/mojave-themes
+	  </p>
+      <p>To match the appearance of this theme with non-Flatpak and non-Snap applications, install and follow the instructions at Vince Liuice's Github repository: https://github.com/vinceliuice/Mojave-gtk-theme
+	  </p>
+      <p>A coordinating Mojave-style icon theme is available here: https://github.com/vinceliuice/McMojave-circle
+	  </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/screenshot01.jpeg</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/screenshot02.jpeg</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/screenshot03.jpeg</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/screenshot04.jpeg</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/screenshot05.jpeg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/vinceliuice/Mojave-gtk-theme/images/login_screen.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/elsiehupp/org.gtk.Gtk3theme.Mojave</url>
+  <developer_name/>
+  <releases>
+      <release date="2021-03-27" />
+  </releases>
+  <update_contact>flatpak_at_elsiehupp.com</update_contact>
+</component>
